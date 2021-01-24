@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Девайс</title>
+  <link href="#адрес_файла_стилей.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+
+    <div>
+      <!-- logo -->
+      <div>
+        <a href="index.html">
+          <img src="img/device-logo.svg" width="163" height="35" alt="Логотип">
+        </a>
+      </div>
+      <!-- /logo -->
+
+      <!-- search + custom links -->
+      <nav>
+        <ul>
+          <li>
+              <form action="#" method="get">
+                <input type="text" name="search" placeholder="Поиск по сайту">
+              </form>
+          </li>
+          <li><span><img src="https://via.placeholder.com/12x12" width="12" alt="Иконка Вход"></span><a href="#">Войти</a></li>
+          <li><span><img src="https://via.placeholder.com/12x12" width="12" alt="Иконка Сравнение"></span><a href="#">Сравнить</a></li>
+          <li><span><img src="https://via.placeholder.com/12x12" width="12" alt="Иконка Корзина"></span><a href="#">Корзина</a></li>
+        </ul>
+      </nav>
+      <!-- search + custom links -->
+    </div>
+
+    <div>
+      <!-- Navigation -->
+      <nav>
+        <ul>
+          <!-- Megamenu -->
+          <li><a href="#">Каталог товаров <span><img src="https://via.placeholder.com/16x16" width="16" alt="Декоративный элемент"></span></a>
+              <ul>
+                <li><a href="#">Виртуальная реальность</a></li>
+                <li><a href="#">Моноподы для селфи</a></li>
+                <li><a href="#">Экшн-камеры</a></li>
+              </ul>
+              
+              <ul>
+                <li><a href="#">Фитнес-браслеты</a></li>
+                <li><a href="#">Умные часы</a></li>
+              </ul>
+              
+              <ul>
+                <li><a href="#">Квадрокоптер</a></li>
+              </ul>
+          </li>
+          <!-- /Megamenu -->
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Гарантия</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+      <!-- /Navigation -->
+    </div>
+
+  </header>
+
+  <main>
+    <h1>Моноподы для селфи</h1>
+    
+    <!-- Crumbs -->
+    <ul>
+      <li><a href="index.html">Главная</a><span><img src="https://via.placeholder.com/4x6" width="4" alt="Декоративный элемент"></span></li>
+      <li><a href="catalog.html">Каталог товаров</a><span><img src="https://via.placeholder.com/4x6" width="4" alt="Декоративный элемент"></span></li>
+      <li>Моноподы для селфи</li>
+    </ul>
+    <!-- /Crumbs -->
+
+    <!-- Filter -->
+    <section>
+      <h2>Фильтр товаров (hidden)</h2>
+      <p>Фильтр:</p>
+
+      <form method="get" action="https://echo.htmlacademy.ru">
+        <!-- Price range -->
+        <fieldset>
+          <legend>Стоимость</legend>
+          <ul>
+            <li>
+              <input type="range" name="price" id="price-range" min="0" max="8000" value="5000" step="1000">
+              <!-- <datalist id="price-range">
+                <option value="0" label="0%"></option>
+                <option value="1000"></option>
+                <option value="2000"></option>
+                <option value="3000"></option>
+                <option value="4000" label="50%"></option>
+                <option value="5000"></option>
+                <option value="6000"></option>
+                <option value="7000"></option>
+                <option value="8000" label="100%"></option>
+              </datalist> -->
+            </li>
+          </ul>
+        </fieldset>
+        <!-- /Price range -->
+        
+        <fieldset>
+          <legend>Цвет</legend>
+          <ul>
+            <li>
+              <input type="checkbox" name="color-black" id="filter-color-black" checked>
+              <label for="filter-color-black">Чёрный</label>
+            </li>
+            
+            <li>
+              <input type="checkbox" name="color-white" id="filter-color-white">
+              <label for="filter-color-white">Белый</label>
+            </li>
+            
+            <li>
+              <input type="checkbox" name="color-blue" id="filter-color-blue" checked>
+              <label for="filter-color-blue">Синий</label>
+            </li>
+
+            <li>
+              <input type="checkbox" name="color-red" id="filter-color-red" checked>
+              <label for="filter-color-red">Красный</label>
+            </li>
+            
+            <li>
+              <input type="checkbox" name="color-pink" id="filter-color-pink">
+              <label for="filter-color-pink">Розовый</label>
+            </li>
+          </ul>
+        </fieldset>
+        
+        <fieldset>
+          <legend>Bluetooth</legend>
+          <ul>
+            <li>
+              <input type="radio" name="product-option" id="filter-bluetooth-y" value="bluetooth-yes" checked>
+              <label for="filter-bluetooth-y">Есть</label>
+            </li>
+            
+            <li>
+              <input type="radio" name="product-option" id="filter-bluetooth-n" value="bluetooth-no">
+              <label for="filter-bluetooth-n">Нет</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <button type="submit">Показать</button>
+      </form>
+    </section>
+    <!-- Filter -->
+
+    <!-- Goods -->
+    <section>
+      <h2>Сортировка товаров (hidden)</h2>
+
+      <p>Сортировка: 
+        <span>
+          <a href="#">По цене</a>
+          <a href="#">По типу</a>
+          <a href="#">По популярности</a>
+        </span>
+        <span>
+          <a href="#"><img src="https://via.placeholder.com/11x11" width="11" alt="Декоративный элемент"></a>
+          <a href="#"><img src="https://via.placeholder.com/11x11" width="11" alt="Декоративный элемент"></a>
+        </span>
+      </p>
+
+      <ul>
+        <li>
+          <a href="#"><img src="https://via.placeholder.com/360x380" width="360" alt="Фотография Любительская селфи-палка">
+          <h3>Любительская селфи-палка</h3></a>
+          <p>1 100 руб.</p>
+          <button type="button">В корзину</button>
+        </li>
+        
+        <li>
+          <a href="#"><img src="https://via.placeholder.com/360x380" width="360" alt="Фотография Профессиональная селфи-палка">
+          <h3>Профессиональная селфи-палка</h3></a>
+          <p>1 500 руб.</p>
+          <button type="button">В корзину</button>
+        </li>
+        
+        <li>
+          <a href="#"><img src="https://via.placeholder.com/360x380" width="360" alt="Фотография Непотопляемая селфи-палка">
+          <h3>Непотопляемая селфи-палка</h3></a>
+          <p>1 500 руб.</p>
+          <button type="button">В корзину</button>
+        </li>
+        
+        <li>
+          <a href="#"><img src="https://via.placeholder.com/360x380" width="360" alt="Фотография Селфи-палка «Следуй за мной»">
+          <img src="https://via.placeholder.com/62x62" width="62" alt="Иконка новый товар">
+          <h3>Селфи-палка «Следуй за мной»</h3></a>
+          <p>1 900 руб.</p>
+          <button type="button">В корзину</button>
+        </li>
+        
+      </ul>
+
+      <!-- Pagination -->
+      <div>
+        <ul>
+          <li><a href="#">Назад</a></li>
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">Вперед</a></li>
+        </ul>
+      </div>
+      <!-- /Pagination -->
+
+    </section>
+    <!-- /Goods -->
+
+  </main>
+
+  <footer>
+    <section>
+      <h2>Войти в личный кабинет (hidden text)</h2>
+      <ul>
+        <li><a href="index.html"><img src="https://via.placeholder.com/163x35" width="163" alt="Девайс лого"></a></li>
+        <li><span><img src="https://via.placeholder.com/12x12" width="12" alt="Иконка Войти"></span><a href="#">Войти</a></li>
+        <li><span><img src="https://via.placeholder.com/12x12" width="12" alt="Иконка Сравнить"></span><a href="#">Сравнить</a></li>
+        <li><span><img src="https://via.placeholder.com/12x12" width="12" alt="Иконка Корзина"></span><a href="#">Корзина</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Наши контакты (hidden text)</h2>
+      <ul>
+        <li>г. Москва, ул. Строителей, 15</li>
+        <li><a href="#">Доставка</a></li>
+        <li><a href="#">Гарантия</a></li>
+        <li><a href="#">Контакты</a></li>
+        <li>Тел.: <a href="tel:+7495495-95-95">+7 (495) 495-95-95</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Мы в социальных сетях (hidden text)</h2>
+      <ul>
+        <li><img src="https://via.placeholder.com/80x7" width="80" alt="Декоративный элемент"></li>
+        <li><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="https://via.placeholder.com/32x32" width="32" alt="Иконка фейсбук"></a></li>
+        <li><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="https://via.placeholder.com/32x32" width="32" alt="Иконка инстаграм"></a></li>
+        <li><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="https://via.placeholder.com/32x32" width="32" alt="Иконка твиттер"></a></li>
+        <li><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="https://via.placeholder.com/27x34" width="27" alt="Логотип Html Academy"></a>
+        </li>
+      </ul>
+    </section>
+  </footer>
+
+  <!-- Write to us pop-up -->
+  <!-- <section>
+  <h2>Напишите нам (hidden text)</h2>
+  <form action="https://echo.htmlacademy.ru/courses" method="post">
+  
+  <label for="user-name">Ваше имя</label>
+  <input id="user-name" type="text" name="fname" placeholder="Имя Фамилия">
+  
+  <label for="user-email">Ваш e-mail</label>
+  <input id="user-email" type="email" name="email" placeholder="email@example.com">
+    
+  <label for="user-message">Текст письма:</label>
+  <textarea id="user-message" name="message" rows="3" cols="25" placeholder="В свободной форме"></textarea>
+
+  <input type="submit" value="Отправить">
+  </form>
+
+  <button type="button">Закрыть</button>
+  </section> -->
+  <!-- /Write to us pop-up -->
+
+  <!-- Google map -->
+  <section>
+    <h2>Как до нас добраться (hidden text)</h2>
+    <!-- <div>Map container</div> -->
+  </section>
+  <!-- Google map -->
+
+</body>
+
+</html>
