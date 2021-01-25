@@ -23,13 +23,15 @@
       <nav>
         <ul>
           <li>
-              <form action="#" method="post">
-                <input type="search" name="search" placeholder="Поиск по сайту">
-              </form>
+            <form action="#" method="post">
+              <input type="search" name="search" placeholder="Поиск по сайту">
+            </form>
           </li>
-          <li><span><img src="https://via.placeholder.com/12x12" width="12" alt="Вход"></span><a href="#">Войти</a></li>
-          <li><span><img src="https://via.placeholder.com/12x12" width="12" alt="Сравнение"></span><a href="#">Сравнить</a></li>
-          <li><span><img src="https://via.placeholder.com/12x12" width="12" alt="Корзина"></span><a href="#">Корзина</a></li>
+          <li><span><img src="https://via.placeholder.com/12x12" width="12" alt="Вход"></span><a href="#">Валентин Петухов</a><a href="#">Выйти</a></li>
+          <li><span><img src="https://via.placeholder.com/12x12" width="12" alt="Сравнение"></span><a
+              href="#">Сравнить</a></li>
+          <li><span><img src="https://via.placeholder.com/12x12" width="12" alt="Корзина"></span><a href="#">Корзина</a>
+          </li>
         </ul>
       </nav>
       <!-- search + custom links -->
@@ -40,21 +42,22 @@
       <nav>
         <ul>
           <!-- Megamenu -->
-          <li><a href="#">Каталог товаров <span><img src="https://via.placeholder.com/16x16" width="16" alt=""></span></a>
-              <ul>
-                <li><a href="#">Виртуальная реальность</a></li>
-                <li><a>Моноподы для селфи</a></li>
-                <li><a href="#">Экшн-камеры</a></li>
-              </ul>
-              
-              <ul>
-                <li><a href="#">Фитнес-браслеты</a></li>
-                <li><a href="#">Умные часы</a></li>
-              </ul>
-              
-              <ul>
-                <li><a href="#">Квадрокоптер</a></li>
-              </ul>
+          <li><a href="#">Каталог товаров <span><img src="https://via.placeholder.com/16x16" width="16"
+                  alt=""></span></a>
+            <ul>
+              <li><a href="#">Виртуальная реальность</a></li>
+              <li><a>Моноподы для селфи</a></li>
+              <li><a href="#">Экшн-камеры</a></li>
+            </ul>
+
+            <ul>
+              <li><a href="#">Фитнес-браслеты</a></li>
+              <li><a href="#">Умные часы</a></li>
+            </ul>
+
+            <ul>
+              <li><a href="#">Квадрокоптер</a></li>
+            </ul>
           </li>
           <!-- /Megamenu -->
           <li><a href="#">Доставка</a></li>
@@ -69,11 +72,15 @@
 
   <main>
     <h1>Моноподы для селфи</h1>
-    
+
     <!-- Crumbs -->
     <ul>
-      <li><a href="index.html">Главная</a><span><img src="https://via.placeholder.com/4x6" width="4" alt=""></span></li>
-      <li><a href="catalog.html">Каталог товаров</a><span><img src="https://via.placeholder.com/4x6" width="4" alt=""></span></li>
+      <li>
+        <a href="index.html">Главная</a><span><img src="https://via.placeholder.com/4x6" width="4" alt=""></span>
+      </li>
+      <li>
+        <a href="catalog.html">Каталог товаров</a><span><img src="https://via.placeholder.com/4x6" width="4" alt=""></span>
+      </li>
       <li><a>Моноподы для селфи</a></li>
     </ul>
     <!-- /Crumbs -->
@@ -89,19 +96,16 @@
           <legend>Стоимость</legend>
           <ul>
             <li>
-              <input type="range" name="price" id="price-range" min="0" max="8000" value="5000" step="1000">
+              <label for="price-min">от 0</label>
+              <input type="range" name="price-min" id="price-min" min="0" max="8000" value="0" step="1000">
               
+              <label for="price-max">до 5000</label>
+              <input type="range" name="price-max" id="price-max" min="0" max="8000" value="5000" step="1000">
             </li>
           </ul>
         </fieldset>
-
-        <fieldset>
-          <legend>Цена за сутки, <span>₽</span></legend>
-          <label>от<input type="text" value="100"></label>
-          <label>до<input type="text" value="600"></label>
-        </fieldset>
         <!-- /Price range -->
-        
+
         <fieldset>
           <legend>Цвет</legend>
           <ul>
@@ -109,12 +113,12 @@
               <input type="checkbox" name="color-black" id="filter-color-black" checked>
               <label for="filter-color-black">Чёрный</label>
             </li>
-            
+
             <li>
               <input type="checkbox" name="color-white" id="filter-color-white">
               <label for="filter-color-white">Белый</label>
             </li>
-            
+
             <li>
               <input type="checkbox" name="color-blue" id="filter-color-blue" checked>
               <label for="filter-color-blue">Синий</label>
@@ -124,14 +128,14 @@
               <input type="checkbox" name="color-red" id="filter-color-red" checked>
               <label for="filter-color-red">Красный</label>
             </li>
-            
+
             <li>
               <input type="checkbox" name="color-pink" id="filter-color-pink">
               <label for="filter-color-pink">Розовый</label>
             </li>
           </ul>
         </fieldset>
-        
+
         <fieldset>
           <legend>Bluetooth</legend>
           <ul>
@@ -139,7 +143,7 @@
               <input type="radio" name="product-option" id="filter-bluetooth-y" value="bluetooth-yes" checked>
               <label for="filter-bluetooth-y">Есть</label>
             </li>
-            
+
             <li>
               <input type="radio" name="product-option" id="filter-bluetooth-n" value="bluetooth-no">
               <label for="filter-bluetooth-n">Нет</label>
@@ -156,48 +160,47 @@
     <section>
       <h2>Сортировка товаров (hidden)</h2>
 
-      <p>Сортировка: 
-        <span>
+      <p>Сортировка:
           <a href="#">По цене</a>
           <a href="#">По типу</a>
           <a href="#">По популярности</a>
-        </span>
-        <span>
           <a href="#"><img src="https://via.placeholder.com/11x11" width="11" alt=""></a>
           <a href="#"><img src="https://via.placeholder.com/11x11" width="11" alt=""></a>
-        </span>
       </p>
 
       <ul>
         <li>
-          <a href="#"><img src="https://via.placeholder.com/360x380" width="360" alt="Любительская селфи-палка">
-          <h3>Любительская селфи-палка</h3></a>
+          <img src="https://via.placeholder.com/360x380" width="360" alt="Любительская селфи-палка">
+          <h3><a href="#monopod-1.html">Любительская селфи-палка</a></h3>
           <p>1 100 руб.</p>
           <button type="button">В корзину</button>
+          <button type="button">Добавить к сравнению</button>
         </li>
-        
+
         <li>
-          <a href="#"><img src="https://via.placeholder.com/360x380" width="360" alt="Профессиональная селфи-палка">
-          <h3>Профессиональная селфи-палка</h3></a>
+          <img src="https://via.placeholder.com/360x380" width="360" alt="Профессиональная селфи-палка">
+          <h3><a href="#monopod-2.html">Профессиональная селфи-палка</a></h3>
           <p>1 500 руб.</p>
           <button type="button">В корзину</button>
+          <button type="button">Добавить к сравнению</button>
         </li>
-        
+
         <li>
-          <a href="#"><img src="https://via.placeholder.com/360x380" width="360" alt="Непотопляемая селфи-палка">
-          <h3>Непотопляемая селфи-палка</h3></a>
+          <img src="https://via.placeholder.com/360x380" width="360" alt="Непотопляемая селфи-палка">
+          <h3><a href="#monopod-3.html">Непотопляемая селфи-палка</a></h3>
           <p>1 500 руб.</p>
           <button type="button">В корзину</button>
+          <button type="button">Добавить к сравнению</button>
         </li>
-        
+
         <li>
-          <a href="#"><img src="https://via.placeholder.com/360x380" width="360" alt="Селфи-палка «Следуй за мной»">
+          <img src="https://via.placeholder.com/360x380" width="360" alt="Селфи-палка «Следуй за мной»">
           <img src="https://via.placeholder.com/62x62" width="62" alt="Иконка новый товар">
-          <h3>Селфи-палка «Следуй за мной»</h3></a>
+          <h3><a href="#monopod-4.html">Селфи-палка «Следуй за мной»</a></h3>
           <p>1 900 руб.</p>
           <button type="button">В корзину</button>
+          <button type="button">Добавить к сравнению</button>
         </li>
-        
       </ul>
 
       <!-- Pagination -->
@@ -221,10 +224,14 @@
     <section>
       <h2>Войти в личный кабинет (hidden text)</h2>
       <ul>
-        <li><a href="index.html"><img src="https://via.placeholder.com/163x35" width="163" alt="На главную интернет-магазина Девайс"></a></li>
-        <li><span><img src="https://via.placeholder.com/12x12" width="12" alt="Иконка Войти"></span><a href="#">Войти</a></li>
-        <li><span><img src="https://via.placeholder.com/12x12" width="12" alt="Иконка Сравнить"></span><a href="#">Сравнить</a></li>
-        <li><span><img src="https://via.placeholder.com/12x12" width="12" alt="Иконка Корзина"></span><a href="#">Корзина</a></li>
+        <li><a href="index.html"><img src="https://via.placeholder.com/163x35" width="163"
+              alt="На главную интернет-магазина Девайс"></a></li>
+        <li><span><img src="https://via.placeholder.com/12x12" width="12" alt="Иконка Войти"></span><a
+            href="#">Валентин Петухов</a><a href="#">Выйти</a></li>
+        <li><span><img src="https://via.placeholder.com/12x12" width="12" alt="Иконка Сравнить"></span><a
+            href="#">Сравнить</a></li>
+        <li><span><img src="https://via.placeholder.com/12x12" width="12" alt="Иконка Корзина"></span><a
+            href="#">Корзина</a></li>
       </ul>
     </section>
 
@@ -243,10 +250,14 @@
       <h2>Мы в социальных сетях (hidden text)</h2>
       <ul>
         <li><img src="https://via.placeholder.com/80x7" width="80" alt=""></li>
-        <li><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="https://via.placeholder.com/32x32" width="32" alt="Фейсбук"></a></li>
-        <li><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="https://via.placeholder.com/32x32" width="32" alt="Инстаграм"></a></li>
-        <li><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="https://via.placeholder.com/32x32" width="32" alt="Твиттер"></a></li>
-        <li><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="https://via.placeholder.com/27x34" width="27" alt="Интерактивные кусрсы Html Academy"></a>
+        <li><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="https://via.placeholder.com/32x32" width="32"
+              alt="Фейсбук"></a></li>
+        <li><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="https://via.placeholder.com/32x32" width="32"
+              alt="Инстаграм"></a></li>
+        <li><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="https://via.placeholder.com/32x32" width="32"
+              alt="Твиттер"></a></li>
+        <li><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="https://via.placeholder.com/27x34" width="27"
+              alt="Интерактивные кусрсы Html Academy"></a>
         </li>
       </ul>
     </section>
