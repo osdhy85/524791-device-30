@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="62px" height="62px" viewBox="0 0 62 62" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>item-label-new</title>
+    <g id="item-label-new" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M22.4,26.6 L24.32,26.6 L24.32,35 L22.88,35 L19.64,30.44 L19.64,35 L17.72,35 L17.72,26.6 L19.16,26.6 L22.4,31.16 L22.4,26.6 Z M27.6791,33.152 L31.0391,33.152 L31.0391,35 L25.7591,35 L25.7591,26.6 L30.9791,26.6 L30.9791,28.448 L27.6791,28.448 L27.6791,29.84 L30.6791,29.84 L30.6791,31.664 L27.6791,31.664 L27.6791,33.152 Z M33.8383,35 L31.5223,26.6 L33.5383,26.6 L34.9903,32.48 L36.6103,26.6 L38.1703,26.6 L39.7903,32.48 L41.2423,26.6 L43.2583,26.6 L40.9423,35 L38.7583,35 L37.3903,30.044 L36.0223,35 L33.8383,35 Z" id="Shape" fill-opacity="0.3" fill="#000000" fill-rule="nonzero"></path>
+        <circle id="Oval" stroke-opacity="0.3" stroke="#000000" stroke-width="2" cx="31" cy="31" r="30"></circle>
+    </g>
+</svg>

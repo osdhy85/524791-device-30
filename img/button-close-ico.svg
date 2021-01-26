@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="55px" height="55px" viewBox="0 0 55 55" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>button-close-ico</title>
+    <g id="button-close-ico" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Oval" fill="#F0C52E" fill-rule="nonzero" cx="27.5" cy="27.5" r="27.5"></circle>
+        <polygon id="Path" fill="#FFFFFF" fill-rule="nonzero" points="35.95 37.7249 28 29.7624 20.05 37.7249 18.275 35.9499 26.2375 27.9999 18.275 20.0499 20.05 18.2749 28 26.2374 35.95 18.2874 37.7125 20.0499 29.7625 27.9999 37.7125 35.9499"></polygon>
+    </g>
+</svg>
