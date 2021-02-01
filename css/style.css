@@ -1,0 +1,431 @@
+/* Custom properties (CSS variables) */
+:root {
+  --basic-black: #000000;
+  --basic-charcoal: #363636;
+  --basic-dark-grey: #464646;
+  --basic-granite: #7e7e7e;
+  --basic-neutral: #e5e5e5;
+  --basic-light-grey: #f2f2f2;
+  --basic-white: #ffffff;
+  --extra-saffron: #f0c52e;
+  --extra-light-yellow: #f7e296;
+  --extra-lime: #91c92f;
+  --state-rose-water: #f6dada;
+}
+
+/* Local fonts */
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  src: url("/fonts/opensanslight.woff2") format("woff2"),
+    url("/fonts/opensanslight.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("/fonts/opensans.woff2") format("woff2"),
+    url("/fonts/opensans.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  src: url("/fonts/gilroylight.woff2") format("woff2"),
+    url("/fonts/gilroylight.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+  src: url("/fonts/gilroyextrabold.woff2") format("woff2"),
+    url("/fonts/gilroyextrabold.woff") format("woff");
+}
+
+/* Global */
+body {
+  min-width: 1160px;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 28px;
+  font-weight: 300;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Main header */
+.main-header {
+  background-color: var(--extra-light-yellow);
+}
+
+/* Search form - placeholder pseudo element */
+.header-search-form input {
+  border: 0;
+  background-color: transparent;
+}
+
+input[type="search"].search-input-field::-webkit-input-placeholder {
+  font-size: 15px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+input[type="search"].search-input-field::-moz-placeholder {
+  font-size: 15px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.header-search-form .search-input-btn {
+  width: 13px;
+  height: 13px;
+  border: none;
+  color: transparent;
+  background-color: transparent;
+  background-image: url("../img/search-ico.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* Header navigation — top */
+.header-user-nav__list {
+  list-style: none;
+}
+
+/* Header navigation — bottom */
+.header-site-nav__list {
+  list-style: none;
+}
+
+.megamenu {
+  background-color: var(--extra-light-yellow);
+}
+
+.megamenu__list {
+  list-style: none;
+}
+
+/* Basic styles for nav links */
+.nav-link {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--basic-black);
+  background-color: transparent;
+}
+
+.nav-link:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.nav-link:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.megamenu__link {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  color: var(--basic-black);
+  background-color: transparent;
+}
+
+.megamenu__link:hover {
+  color: rgba(0, 0, 0, 0.6)
+}
+
+.megamenu__link:active {
+  color: rgba(0, 0, 0, 0.3)
+}
+
+.user-link-header {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  color: var(--basic-black);
+  background-color: transparent;
+}
+
+.user-link-header:hover {
+  color: rgba(0, 0, 0, 0.6)
+}
+
+.user-link-header:active {
+  color: rgba(0, 0, 0, 0.3)
+}
+
+.user-link-footer {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.7)
+}
+
+.user-link-footer:hover {
+  color: var(--basic-white)
+}
+
+.user-link-footer:active {
+  color: rgba(255, 255, 255, 0.3)
+}
+
+/* Slider — visual */
+.slider-list {
+  list-style: none;
+}
+
+/* Slider — text */
+.slide-title {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 59px;
+  color: var(--basic-black);
+}
+
+.slide-text {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  color: var(--basic-black);
+}
+
+.slide-link {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.pruduct-features__text {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  color: var(--basic-black);
+}
+
+.pruduct-features__text--lead {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 43px;
+  letter-spacing: 0.1em;
+  color: var(--basic-black);
+}
+
+/* Slider — nav bullets */
+.slider-nav {
+  list-style: none;
+}
+
+/* Section — categories */
+.popular__list {
+  list-style: none;
+}
+
+.popular__link {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  color: var(--basic-black);
+}
+
+.popular__link:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+/* Section — categories */
+.services__list {
+  list-style: none;
+}
+
+.tab-panes {
+  background-color: var(--basic-neutral);
+}
+
+.tab-panes__pane-content h3 {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 59px;
+  letter-spacing: 0.2em;
+  color: var(--basic-black);
+}
+
+.tab-panes__text {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  color: var(--basic-black);
+}
+
+/* Logo slider */
+.logo-slider__list {
+  list-style: none;
+}
+
+/* Contact section */
+.contact-section h2 {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 59px;
+  letter-spacing: 0.2em;
+  color: var(--basic-black);
+}
+
+.contact-section p {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 28px;
+  color: var(--basic-black);
+}
+
+.about__partners-list {
+  padding: 0;
+  list-style-position: inside;
+  list-style-image: url(../img/bullet.svg);
+}
+
+.about__partners-item {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 28px;
+  color: var(--basic-black);
+}
+
+/* Main footer */
+.main-footer {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  color: var(--basic-white);
+  background-color: var(--basic-charcoal);
+}
+
+.footer-nav__list {
+  list-style: none;
+}
+
+.footer-contacts__list {
+  list-style: none;
+}
+
+.footer-contacts__link {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--basic-white);
+}
+
+.footer-contacts__link:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-contacts__link:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-phone {
+  color: var(--basic-white);
+}
+
+.footer-social__list {
+  list-style: none;
+}
+
+
+
+/* Write to us modal form */
+.modal {
+  background-color: var(--basic-white);
+  box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.7);
+}
+
+.contact-form input,
+.contact-form textarea {
+  border: none;
+  background-color: var(--basic-light-grey);
+}
+
+.contact-form label {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 800;
+  color: var(--basic-black);
+}
+
+.contact-form input[type="text"].user-name-field::-webkit-input-placeholder,
+.contact-form input[type="email"].user-email-field::-webkit-input-placeholder,
+.contact-form textarea.user-message-field::-webkit-input-placeholder {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.contact-form .button {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--basic-black);
+  background-color: transparent;
+}
+
+/* Accessibility */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
