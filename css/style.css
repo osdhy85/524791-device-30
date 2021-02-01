@@ -96,12 +96,31 @@ input[type="search"].search-input-field::-moz-placeholder {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.header-search-form .search-input-btn {
+.search-input-btn {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+  border: 2px solid var(--basic-black);
+  background: none;
+}
+
+.search-input-btn:hover {
+color: var(--basic-white);
+background-color: var(--basic-black);
+}
+
+.search-input-btn:active {
+color: rgba(255, 255, 255, 0.3);
+background-color: var(--basic-black);
+}
+
+.search-input-icon {
+  display: inline-block;
   width: 13px;
   height: 13px;
-  border: none;
-  color: transparent;
-  background-color: transparent;
   background-image: url("../img/search-ico.svg");
   background-position: center center;
   background-repeat: no-repeat;
