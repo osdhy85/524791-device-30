@@ -108,13 +108,13 @@ input[type="search"].search-input-field::-moz-placeholder {
 }
 
 .search-input-btn:hover {
-color: var(--basic-white);
-background-color: var(--basic-black);
+  color: var(--basic-white);
+  background-color: var(--basic-black);
 }
 
 .search-input-btn:active {
-color: rgba(255, 255, 255, 0.3);
-background-color: var(--basic-black);
+  color: rgba(255, 255, 255, 0.3);
+  background-color: var(--basic-black);
 }
 
 .search-input-icon {
@@ -235,6 +235,10 @@ background-color: var(--basic-black);
 
 .user-link-footer:hover {
   color: var(--basic-white)
+}
+
+.user-link-footer:hover span {
+  opacity: 0.6;
 }
 
 .user-link-footer:active {
