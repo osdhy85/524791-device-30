@@ -77,7 +77,6 @@ img {
   background-color: var(--extra-light-yellow);
 }
 
-
 /* Search form - placeholder pseudo element */
 .header-search-form input {
   border: 0;
@@ -85,15 +84,35 @@ img {
 }
 
 input[type="search"].search-input-field::-webkit-input-placeholder {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 300;
   font-size: 15px;
   line-height: 20px;
   color: rgba(0, 0, 0, 0.3);
 }
 
 input[type="search"].search-input-field::-moz-placeholder {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 300;
   font-size: 15px;
   line-height: 20px;
   color: rgba(0, 0, 0, 0.3);
+}
+
+input:hover.search-input-field::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+input:focus.search-input-field::-webkit-input-placeholder {
+  color: var(--basic-black);
+}
+
+input:hover.search-input-field::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+input:focus.search-input-field::-moz-placeholder {
+  color: var(--basic-black);
 }
 
 .search-input-btn {
@@ -136,11 +155,11 @@ input[type="search"].search-input-field::-moz-placeholder {
   list-style: none;
 }
 
-.megamenu {
+.header-site-subnav {
   background-color: var(--extra-light-yellow);
 }
 
-.megamenu__list {
+.header-site-subnav__list {
   list-style: none;
 }
 
@@ -164,7 +183,7 @@ input[type="search"].search-input-field::-moz-placeholder {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.megamenu__link {
+.header-site-subnav__link {
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: 300;
   font-size: 15px;
@@ -173,11 +192,11 @@ input[type="search"].search-input-field::-moz-placeholder {
   background-color: transparent;
 }
 
-.megamenu__link:hover {
+.header-site-subnav__link:hover {
   color: rgba(0, 0, 0, 0.6)
 }
 
-.megamenu__link:active {
+.header-site-subnav__link:active {
   color: rgba(0, 0, 0, 0.3)
 }
 
@@ -332,7 +351,7 @@ input[type="search"].search-input-field::-moz-placeholder {
   list-style: none;
 }
 
-.popular__link {
+.popular__link h3 {
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   line-height: 22px;
@@ -427,6 +446,16 @@ input[type="search"].search-input-field::-moz-placeholder {
   list-style: none;
 }
 
+li.footer-contacts__item ul {
+  padding: 0;
+  list-style: none;
+}
+
+li.footer-social__item ul {
+  padding: 0;
+  list-style: none;
+}
+
 .footer-contacts__link {
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
@@ -451,6 +480,10 @@ input[type="search"].search-input-field::-moz-placeholder {
 
 .footer-social__list {
   list-style: none;
+}
+
+.link-style {
+  background-image: url(../img/bullet.svg);
 }
 
 
