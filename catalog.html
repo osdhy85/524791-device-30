@@ -17,7 +17,7 @@
   <header class="main-header">
 
     <!-- logo -->
-    <a><img class="header-logo" src="assets/device-logo-black.svg" width="163" height="35" alt=""></a>
+    <a href="index.html" aria-label="На главную интернет-магазина Девайс"><img class="header-logo" src="assets/device-logo-black.svg" width="163" height="35" alt=""></a>
     <!-- /logo -->
 
     <!-- Navigation — top -->
@@ -59,20 +59,20 @@
 
           <div class="header-site-subnav">
             <ul class="header-site-subnav__list">
-              <li class="header-site-subnav__item"><a class="header-site-subnav__link" href="#">Виртуальная
+              <li class="header-site-subnav__item"><a class="header-site-subnav__link">Виртуальная
                   реальность</a></li>
-              <li class="header-site-subnav__item"><a class="header-site-subnav__link" href="catalog.html">Моноподы для
+              <li class="header-site-subnav__item"><a class="header-site-subnav__link">Моноподы для
                   селфи</a></li>
-              <li class="header-site-subnav__item"><a class="header-site-subnav__link" href="#">Экшн-камеры</a></li>
+              <li class="header-site-subnav__item"><a class="header-site-subnav__link">Экшн-камеры</a></li>
             </ul>
 
             <ul class="header-site-subnav__list">
-              <li class="header-site-subnav__item"><a class="header-site-subnav__link" href="#">Фитнес-браслеты</a></li>
-              <li class="header-site-subnav__item"><a class="header-site-subnav__link" href="#">Умные часы</a></li>
+              <li class="header-site-subnav__item"><a class="header-site-subnav__link">Фитнес-браслеты</a></li>
+              <li class="header-site-subnav__item"><a class="header-site-subnav__link">Умные часы</a></li>
             </ul>
 
             <ul class="header-site-subnav__list">
-              <li class="header-site-subnav__item"><a class="header-site-subnav__link" href="#">Квадрокоптер</a></li>
+              <li class="header-site-subnav__item"><a class="header-site-subnav__link">Квадрокоптер</a></li>
             </ul>
           </div>
         </li>
@@ -107,10 +107,9 @@
 
     <!-- Filter-features -->
     <section class="filter-features">
-      <h2 class="visually-hidden">Фильтр товаров</h2>
 
       <div class="filter-features-header">
-        <h3>Фильтр:</h3>
+        <h2>Фильтр:</h2>
       </div>
 
       <form class="filter-features__form" method="get" action="https://echo.htmlacademy.ru/">
@@ -119,7 +118,7 @@
         <fieldset class="filter-features__form-fieldset">
           <legend>Стоимость</legend>
           <ul>
-            <li>
+            <li class="filter-features__option-item">
               <label for="price-min">от 0</label>
               <input class="filter-features__price-range-input" type="range" name="price-min" id="price-min" min="0"
                 max="8000" value="0" step="1000">
@@ -159,7 +158,7 @@
             </li>
 
             <li class="filter-features__option-item">
-              <input class="filter-features__input-checkbox" type="checkbox" name="color-pink" id="filter-color-pink">
+              <input class="filter-features__input-checkbox" type="checkbox" name="color-pink" id="filter-color-pink" disabled>
               <label for="filter-color-pink">Розовый</label>
             </li>
           </ul>
@@ -192,20 +191,15 @@
 
     <!-- Filter-sorting -->
     <section class="filter-sorting">
-      <h2 class="visually-hidden">Сортировка товаров</h2>
-
       <div class="filter-sorting__container">
+        <h2>Сортировка:</h2>
         <ul class="filter-sorting__list">
-          <li class="filter-sorting__item"><span>Сортировка</span></li>
-          <li class="filter-sorting__item">
-            <ul>
-              <li><a class="filter-sorting__link filter-sorting__link--current">По цене</a></li>
-              <li><a class="filter-sorting__link">По типу</a></li>
-              <li><a class="filter-sorting__link">По популярности</a></li>
-            </ul>
-          </li>
-          <li class="filter-sorting__item">
+          
+          <li class="filter-sorting__item"><a class="filter-sorting__link filter-sorting__link--current">По цене</a></li>
+          <li class="filter-sorting__item"><a class="filter-sorting__link">По типу</a></li>
+          <li class="filter-sorting__item"><a class="filter-sorting__link">По популярности</a></li>
 
+          <li class="filter-sorting__item">
             <a class="filter-sorting__order-link"><svg width="11px" height="11px" viewBox="0 0 11 11" version="1.1"
                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <title>filter-triangle-up</title>
@@ -217,7 +211,9 @@
                 </g>
               </svg>
             </a>
+          </li>
 
+          <li class="filter-sorting__item">
             <a class="filter-sorting__order-link filter-sorting__order-link--current">
               <svg width="11px" height="11px" viewBox="0 0 11 11" version="1.1" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -228,7 +224,6 @@
                 </g>
               </svg>
             </a>
-
           </li>
         </ul>
       </div>

@@ -11,6 +11,7 @@
   --basic-white-rgba: 250, 250, 250;
   --extra-filter-grey: #DCDCDC;
   --extra-pagination-grey: #EBEBEB;
+  --extra-filter-option-disabled: #a6a6a6;
   --extra-saffron: #f0c52e;
   --extra-light-yellow: #f7e296;
   --extra-lime: #91c92f;
@@ -55,7 +56,7 @@
 }
 
 /* Global */
-body {
+.page-body {
   min-width: 1160px;
   margin: 0;
   padding: 0;
@@ -65,6 +66,8 @@ body {
   font-weight: 300;
   color: var(--basic-black);
   background-color: var(--basic-white);
+
+  display: grid;
 }
 
 a {
@@ -382,7 +385,15 @@ h1 {
   color: rgba(var(--basic-black-rgba), 0.3);
 }
 
-.filter-features-header h3 {
+.filter-features {
+  background-color: var(--basic-neutral);
+}
+
+.filter-features-header {
+  background-color: var(--extra-filter-grey);
+}
+
+.filter-features-header h2 {
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
   font-size: 16px;
@@ -412,12 +423,49 @@ h1 {
   color: var(--basic-black);
 }
 
+.filter-features__input-checkbox:hover {
+  color: rgba(var(--basic-black-rgba), 0.6);
+}
+
+.filter-features__input-checkbox:active {
+  color: var(--basic-black);
+}
+
+input[type="checkbox"]:disabled {
+  opacity: 0.25;
+}
+
+input[type="checkbox"]:disabled + label {
+  color: var(--extra-filter-option-disabled);
+}
+
+input[type="radio"]:disabled {
+  opacity: 0.25;
+}
+
+input[type="radio"]:disabled + label {
+  color: var(--extra-filter-option-disabled);
+}
+
 /* [type="checkbox"]:not(:checked),
 [type="checkbox"]:checked {
   position: absolute;
   left: 0;
   opacity: 1;
 } */
+
+.filter-sorting__container {
+  background-color: var(--basic-neutral);
+}
+
+.filter-sorting__container h2 {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
 
 .filter-sorting__list {
   list-style: none;
@@ -439,7 +487,7 @@ h1 {
 
 .filter-sorting__link {
   font-family: "Open Sans", Arial, sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   line-height: 19px;
   color: rgba(var(--basic-black-rgba), 0.3);
@@ -468,7 +516,7 @@ h1 {
 
 .filter-sorting__order-link:hover svg g,
 .filter-sorting__order-link--curent:hover svg g {
-  fill: rgba(var(--basic-black-rgba), 0.4);
+  fill-opacity: 0.4;
   cursor: pointer;
 }
 
@@ -576,6 +624,14 @@ h1 {
 
 .catalog-pagination__number-link {
   color: rgba(var(--basic-black-rgba), 0.3);
+}
+
+.catalog-pagination__number-link:hover {
+  color: rgba(var(--basic-black-rgba), 0.6);
+}
+
+.catalog-pagination__number-link:active {
+  color: var(--basic-black);
 }
 
 .catalog-pagination__number-link--current {
