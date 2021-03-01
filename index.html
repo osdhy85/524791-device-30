@@ -49,10 +49,10 @@
       <nav class="header-site-nav">
         <ul class="header-site-nav__list">
 
-          <li class="header-site-nav__item"><a class="nav-link dropdown-toggle" href="#">Каталог товаров</a></li>
-          <li class="header-site-nav__item"><a class="nav-link" href="#">Доставка</a></li>
-          <li class="header-site-nav__item"><a class="nav-link" href="#">Гарантия</a></li>
-          <li class="header-site-nav__item"><a class="nav-link" href="#contacts">Контакты</a></li>
+          <li class="header-site-nav__item"><a class="link dropdown-toggle" href="#">Каталог товаров</a></li>
+          <li class="header-site-nav__item"><a class="link" href="#">Доставка</a></li>
+          <li class="header-site-nav__item"><a class="link" href="#">Гарантия</a></li>
+          <li class="header-site-nav__item"><a class="link" href="#contacts">Контакты</a></li>
           <!-- Sabnav -->
           <!-- <li class="header-site-nav__item">
             <div class="header-site-subnav">
@@ -107,7 +107,7 @@
             <div class="slide__text-container">
               <h3 class="slide__title">Делай селфи, <br>как Бен Стиллер!</h3>
               <p class="slide__text">Самая длинная палка для селфи доступна в&nbsp;нашем магазине.<br> Восемь (Восемь, Карл!) метров длиной и&nbsp;весом всего 5 килограмм.</p>
-              <a class="slide__link" href="catalog.html">Подробнее</a>
+              <a class="slide__link slide__link--style" href="catalog.html">Подробнее</a>
 
               <table class="slide-pruduct-features">
                 <thead>
@@ -288,27 +288,24 @@
         <div class="tab-panes">
 
           <ul class="tab-panes__services-list">
-            <li><a class="nav-link nav-link--style" href="#tab-pane-1">Доставка</a></li>
-            <li><a class="nav-link nav-link--style" href="#tab-pane-2">Гарантия</a></li>
-            <li><a class="nav-link nav-link--style nav-link--active" href="#tab-pane-3">Кредит</a></li>
+            <li><a class="link service-link service-link--current" href="#tab-pane-1">Доставка</a></li>
+            <li><a class="link service-link" href="#tab-pane-2">Гарантия</a></li>
+            <li><a class="link service-link" href="#tab-pane-3">Кредит</a></li>
           </ul>
 
-          <div class="tab-panes__pane-content" id="tab-pane-1">
+          <div class="tab-panes__pane-content tab-panes__pane-img-1" id="tab-pane-1">
             <h3 class="tab-panes__pane-title">Доставка</h3>
-            <p class="tab-panes__pane-text">Мы&nbsp;с&nbsp;удовольствием доставим ваш товар прямо к&nbsp;вашему подъезду совершенно бесплатно! Ведь мы&nbsp;неплохо заработаем, поднимая его на&nbsp;ваш этаж.</p>
-            <img class="tab-panes__pane-img" src="img/delivery-man-ico.svg" width="136" height="164" alt="курьер">
+            <p class="tab-panes__pane-text">Мы&nbsp;с&nbsp;удовольствием доставим ваш товар прямо к&nbsp;вашему<br> подъезду совершенно бесплатно! Ведь мы&nbsp;неплохо<br> заработаем, поднимая его на&nbsp;ваш этаж.</p>
           </div>
 
-          <div class="tab-panes__pane-content tab-pane" id="tab-pane-2">
+          <div class="tab-panes__pane-content tab-panes__pane-img-2 tab-pane" id="tab-pane-2">
             <h3 class="tab-panes__pane-title">Гарантия</h3>
             <p class="tab-panes__pane-text">Если <nobr>из-за</nobr> возгорания купленного у&nbsp;нас товара у&nbsp;вас сгорит дом&nbsp;&mdash; не&nbsp;переживайте, мы&nbsp;выдадим вам новый. <br>Товар, не&nbsp;дом, конечно&nbsp;же.</p>
-            <img class="tab-panes__pane-img" src="img/warranty-ico.svg" width="171" height="195" alt="гарантия">
           </div>
 
-          <div class="tab-panes__pane-content tab-pane" id="tab-pane-3">
+          <div class="tab-panes__pane-content tab-panes__pane-img-3 tab-pane" id="tab-pane-3">
             <h3 class="tab-panes__pane-title">Кредит</h3>
-            <p class="tab-panes__pane-text">Залезть в&nbsp;долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
-            <img class="tab-panes__pane-img" src="img/online-loans-ico.svg" width="156" height="186" alt="Кредит">
+            <p class="tab-panes__pane-text">Залезть в&nbsp;долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные<br> условия кредита. Выгодные для нашего банка, разумеется.</p>
           </div>
         </div>
       </div>
@@ -355,7 +352,7 @@
             <li class="contacts-about__partners-item">Автотрейдинг</li>
             <li class="contacts-about__partners-item">ЖелДорЭкспедиция</li>
           </ul>
-          <a class="nav-link" href="#">Подробнее о нас</a>
+          <a class="link contacts-link" href="#">Подробнее о нас</a>
         </section>
         <!-- /About us -->
 
@@ -369,7 +366,7 @@
           <img class="contacts__map-img" src="assets/contact-block-map.png" width="560" height="222"
             alt="Наш офис на карте по адресу улица Строителей, 15">
           <!-- /Map -->
-          <a class="nav-link" href="#">Напишите нам</a>
+          <a class="link contacts-link" href="#">Напишите нам</a>
         </section>
         <!-- /Contacts -->
       </div>
@@ -388,12 +385,18 @@
                 height="35" alt="Логотип интернет-магазина Девайс"></a>
           </li>
 
-          <li class="footer-nav__item"><a class="footer-nav__user-link footer-nav__user-icon" href="#"
-              aria-label="Войти в личный кабинет">Войти</a></li>
-
-          <li class="footer-nav__item"><a class="footer-nav__user-link footer-nav__chart-icon" href="#" aria-label="Сравнить">Сравнить</a></li>
-
-          <li class="footer-nav__item"><a class="footer-nav__user-link footer-nav__cart-icon" href="#" aria-label="Корзина">Корзина</a></li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__user-link footer-nav__user-icon" href="#" aria-label="Войти в личный кабинет">Войти</a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__user-link footer-nav__chart-icon" aria-label="Сравнить">Сравнить</a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__user-link footer-nav__cart-icon" href="#" aria-label="Корзина">Корзина</a>
+            </li>
+           
+          </li>
+          
         </ul>
       </section>
 
@@ -403,9 +406,9 @@
           <li class="footer-contacts__item">г. Москва, ул. Строителей, 15</li>
           <li class="footer-contacts__item">
             <ul>
-              <li><a class="footer-contacts__link" href="#">Доставка</a></li>
-              <li><a class="footer-contacts__link" href="#">Гарантия</a></li>
-              <li><a class="footer-contacts__link" href="#">Контакты</a></li>
+              <li><a class="footer-contacts__link">Доставка</a></li>
+              <li><a class="footer-contacts__link">Гарантия</a></li>
+              <li><a class="footer-contacts__link">Контакты</a></li>
             </ul>
           </li>
           <li class="footer-contacts__item">Тел.: <a class="footer-phone" href="tel:+7495495-95-95">+7 (495)
@@ -505,7 +508,7 @@
     <h2 class="visually-hidden">Как до нас добраться</h2>
     <!-- <div><img src="assets/popup-map.png" width="994" height="593" alt="Наш офис на карте по адресу улица Строителей, 15">
     </div> -->
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="994" height="593" allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="960" height="558" allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
     <button class="modal-map__close-btn" type="button" aria-label="Закрыть окно с картой"></button>
   </section>
   <!-- Google map -->
