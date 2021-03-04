@@ -78,10 +78,6 @@
   width: 1160px;
 }
 
-/* .main-container {
-  margin: 0 20px;
-} */
-
 a {
   text-decoration: none;
 }
@@ -104,19 +100,17 @@ h1 {
   margin: 40px 0 0 0;
   min-height: 300px;
   background-color: var(--extra-light-yellow);
-}
-
-.main-header-container a {
   position: relative;
 }
 
-.header-logo {
+a.header-logo::before {
+  content: "";
   display: block;
   position: absolute;
-  width: 163px;
-  height: 35px;
   top: -20px;
   left: 60px;
+  width: 163px;
+  height: 35px;
   background-image: url("../assets/device-logo-black.svg");
   background-position: center center;
   background-repeat: no-repeat;
@@ -173,7 +167,7 @@ h1 {
   background-position: 0 0;
   background-repeat: no-repeat;
 }
- 
+
 .header-search-form__input:focus {
   outline: none;
   outline-offset: 0;
@@ -189,7 +183,7 @@ h1 {
   text-transform: uppercase;
 }
 
-.header-search-form__input:focus + button {
+.header-search-form__input:focus+button {
   visibility: visible;
 }
 
@@ -1343,11 +1337,11 @@ input[type="radio"]:disabled+label::after {
   margin: 0 0 42px 0;
 }
 
-.cards__item--overlay-link > div {
+.cards__item--overlay-link>div {
   display: none;
 }
 
-.cards__item--overlay-link:hover > div {
+.cards__item--overlay-link:hover>div {
   content: "";
   display: block;
   position: absolute;
