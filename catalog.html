@@ -17,7 +17,7 @@
   <header class="main-header body-width">
     <div class="main-header-container">
       <!-- logo -->
-      <a class="header-logo" href="index.html"></a>
+      <a class="header-logo" href="index.html" aria-label="Логотип магазина—ведёт на главную страницу, текущая — Моноподы для селфи"></a>
       <!-- /logo -->
 
       <!-- Navigation — top -->
@@ -30,7 +30,7 @@
               <span class="header-search-form__icon"></span>
               <input class="header-search-form__input" type="search" id="search-form-input" name="search-input-field"
                 placeholder="Поиск по сайту">
-              <button class="header-search-form__btn" type="submit">НАЙТИ</button>
+              <button class="header-search-form__btn" type="submit" aria-label="Кнопка—Найти">НАЙТИ</button>
             </form>
           </li>
 
@@ -47,7 +47,7 @@
           </li>
 
           <li class="header-user-nav__item">
-            <a class="header-user-nav__link header-user-nav__cart-icon" href="#" aria-label="Корзина">Корзина</a>
+            <a class="header-user-nav__link header-user-nav__cart-icon" href="#" aria-label="Перейти в корзину">Корзина</a>
           </li>
         </ul>
       </nav>
@@ -57,7 +57,7 @@
       <nav class="header-site-nav">
         <ul class="header-site-nav__list">
 
-          <li class="header-site-nav__item"><a class="link dropdown-toggle" href="#">Каталог товаров</a></li>
+          <li class="header-site-nav__item"><a class="link dropdown-toggle" href="#" aria-label="перейти на страницу — Каталог товаров">Каталог товаров</a></li>
           <li class="header-site-nav__item"><a class="link" href="#">Доставка</a></li>
           <li class="header-site-nav__item"><a class="link" href="#">Гарантия</a></li>
           <li class="header-site-nav__item"><a class="link" href="#">Контакты</a></li>
@@ -101,12 +101,12 @@
 
         <ul class="breadcrumbs__list">
           <li class="breadcrumbs__item">
-            <a class="breadcrumbs__link" href="index.html">Главная</a>
+            <a class="breadcrumbs__link" href="index.html" aria-label="Навигация—На главную">Главная</a>
           </li>
           <li class="breadcrumbs__item">
-            <a class="breadcrumbs__link" href="#">Каталог товаров</a>
+            <a class="breadcrumbs__link" href="#" aria-label="Навигация—Каталог товаров">Каталог товаров</a>
           </li>
-          <li class="breadcrumbs__item"><a class="breadcrumbs__link breadcrumbs__link--current">Моноподы для селфи</a>
+          <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link breadcrumbs__link--current" aria-label="Навигация—Моноподы для селфи—текущая страница">Моноподы для селфи</a>
           </li>
         </ul>
       </div>
@@ -123,7 +123,7 @@
           <h2>Фильтр:</h2>
         </div>
 
-        <form class="filter-features__form" method="get" action="https://echo.htmlacademy.ru/">
+        <form class="filter-features__form" method="get" action="https://echo.htmlacademy.ru">
 
           <!-- Price range -->
           <fieldset class="filter-features__form-fieldset">
@@ -206,7 +206,7 @@
           </fieldset>
           <!-- Filter — bluetooth -->
 
-          <button class="button button--filter-features" type="submit">Показать</button>
+          <button class="button button--filter-features" type="submit" aria-label="Кнопка показать">Показать</button>
         </form>
       </section>
       <!-- Filter-features -->
@@ -224,14 +224,14 @@
 
             <div class="filter-sorting__item">
               <ul>
-                <li><a class="filter-sorting__link filter-sorting__link--current">По цене</a></li>
-                <li><a class="filter-sorting__link">По типу</a></li>
-                <li><a class="filter-sorting__link">По популярности</a></li>
+                <li><a href="#" class="filter-sorting__link filter-sorting__link--current" aria-label="Сортировка товаров по цене">По цене</a></li>
+                <li><a href="#" class="filter-sorting__link" aria-label="Сортировка товаров по типу">По типу</a></li>
+                <li><a href="#" class="filter-sorting__link" aria-label="Сортировка товаров по популярности">По популярности</a></li>
               </ul>
             </div>
 
             <div class="filter-sorting__item">
-              <a class="filter-sorting__order-link"><svg width="11px" height="11px" viewBox="0 0 11 11" version="1.1"
+              <a href="#" class="filter-sorting__order-link" aria-label="Порядок сортировки товаров—от наименьшего"><svg width="11px" height="11px" viewBox="0 0 11 11" version="1.1"
                   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                   <title>filter-triangle-up</title>
                   <g id="filter-triangle-up" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
@@ -243,7 +243,7 @@
                 </svg>
               </a>
 
-              <a class="filter-sorting__order-link filter-sorting__order-link--current">
+              <a href="#" class="filter-sorting__order-link filter-sorting__order-link--current" aria-label="Порядок сортировки товаров—от наибольшего">
                 <svg width="11px" height="11px" viewBox="0 0 11 11" version="1.1" xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink">
                   <title>filter-triangle-down</title>
@@ -275,7 +275,7 @@
               </div>
             </a>
             <div class="cards__text">
-              <a class="cards__item-link" href="#monopod-1.html">
+              <a class="cards__item-link" href="#monopod-1.html" aria-label="Любительская селфи-палка — стоимость 1 100 рублей">
                 <h3>Любительская <nobr>селфи-палка</nobr>
                 </h3>
               </a>
@@ -293,7 +293,7 @@
               </div>
             </a>
             <div class="cards__text">
-              <a class="cards__item-link" href="#monopod-2.html">
+              <a class="cards__item-link" href="#monopod-2.html" aria-label="Профессиональная селфи-палка — стоимость 1 500 рублей">
                 <h3>Профессиональная <nobr>селфи-палка</nobr>
                 </h3>
               </a>
@@ -312,7 +312,7 @@
               </div>
             </a>
             <div class="cards__text">
-              <a class="cards__item-link" href="#monopod-3.html">
+              <a class="cards__item-link" href="#monopod-3.html" aria-label="Непотопляемая селфи-палка — стоимость 1 500 рублей">
                 <h3>Непотопляемая <nobr>селфи-палка</nobr>
                 </h3>
               </a>
@@ -332,7 +332,7 @@
               </div>
             </a>
             <div class="cards__text">
-              <a class="cards__item-link" href="#monopod-4.html">
+              <a class="cards__item-link" href="#monopod-4.html" aria-label="Селфи-палка «Следуй за мной» — стоимость 1 900 рублей">
                 <h3>Селфи-палка &laquo;Следуй за мной&raquo;</h3>
               </a>
               <p>1&nbsp;900&nbsp;руб.</p>
@@ -347,25 +347,24 @@
       <div class="catalog-pagination">
         <div class="catalog-pagination__inner">
           <div class="catalog-pagination__item">
-            <a class="catalog-pagination__link catalog-pagination__link--push-previous">Назад</a>
+            <a href="#" class="catalog-pagination__link catalog-pagination__link--push-previous" aria-label="Кнопка — Назад">Назад</a>
           </div>
 
           <div class="catalog-pagination__item">
             <ul class="catalog-pagination__number-list">
-              <li><a
-                  class="catalog-pagination__number-link catalog-pagination__number-link--current">1</a>
+              <li><a href="#" class="catalog-pagination__number-link catalog-pagination__number-link--current" aria-label="Страница 1 — текущая">1</a>
               </li>
               <li>
-                <a class="catalog-pagination__number-link">2</a>
+                <a href="#" class="catalog-pagination__number-link" aria-label="Страница 2">2</a>
               </li>
               <li>
-                <a class="catalog-pagination__number-link">3</a>
+                <a href="#" class="catalog-pagination__number-link" aria-label="Страница 3">3</a>
               </li>
             </ul>
           </div>
 
           <div class="catalog-pagination__item">
-            <a class="catalog-pagination__link catalog-pagination__link--push-next">Вперед</a>
+            <a href="#" class="catalog-pagination__link catalog-pagination__link--push-next" aria-label="Кнопка — Вперёд">Вперед</a>
           </div>
         </div>
       </div>
@@ -381,7 +380,7 @@
         <h2 class="visually-hidden">Войти в личный кабинет</h2>
         <ul class="footer-nav__list">
           <li class="footer-nav__item"><a class="footer-logo" href="index.html"
-              aria-label="На главную интернет-магазина Девайс"><img src="assets/device-logo-yellow.svg" width="163"
+              aria-label="Логотип—На главную интернет-магазина Девайс"><img src="assets/device-logo-yellow.svg" width="163"
                 height="35" alt="Логотип интернет-магазина Девайс"></a>
           </li>
 
@@ -391,7 +390,7 @@
           </li>
 
           <li class="footer-nav__item"><a class="footer-nav__user-link footer-nav__chart-icon" href="#"
-              aria-label="Сравнить">Сравнить</a>
+              aria-label="Сравнить выбранные товары">Сравнить</a>
           </li>
 
           <li class="footer-nav__item"><a class="footer-nav__user-link footer-nav__cart-icon" href="#"
@@ -411,8 +410,8 @@
               <li><a class="footer-contacts__link" href="#">Контакты</a></li>
             </ul>
           </li>
-          <li class="footer-contacts__item">Тел.: <a class="footer-phone" href="tel:+7495495-95-95">+7 (495)
-              495-95-95</a>
+          <li class="footer-contacts__item">Тел.: <a class="footer-phone" href="tel:+7495495-95-95" aria-label="Телефон для связи +7 (495)
+            495-95-95">+7 (495) 495-95-95</a>
           </li>
         </ul>
       </section>
@@ -426,7 +425,7 @@
           <li class="footer-social__item">
             <ul>
               <li>
-                <a class="footer-social__link" href="https://htmlacademy.ru/intensive/htmlcss" title="Фейсбук">
+                <a class="footer-social__link" href="https://htmlacademy.ru/intensive/htmlcss" title="Фейсбук" aria-hidden="true" focusable="false">
                   <svg class="footer-social__icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
                     xmlns:v="https://vecta.io/nano">
                     <path
@@ -437,7 +436,7 @@
               </li>
 
               <li>
-                <a class="footer-social__link" href="https://htmlacademy.ru/intensive/htmlcss" title="Инстаграм"><svg
+                <a class="footer-social__link" href="https://htmlacademy.ru/intensive/htmlcss" title="Инстаграм" aria-hidden="true" focusable="false"><svg
                     class="footer-social__icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
                     xmlns:v="https://vecta.io/nano">
                     <path
@@ -448,7 +447,7 @@
               </li>
 
               <li>
-                <a class="footer-social__link" href="https://htmlacademy.ru/intensive/htmlcss" title="Твиттер"><svg
+                <a class="footer-social__link" href="https://htmlacademy.ru/intensive/htmlcss" title="Твиттер" aria-hidden="true" focusable="false"><svg
                     class="footer-social__icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
                     xmlns:v="https://vecta.io/nano">
                     <path

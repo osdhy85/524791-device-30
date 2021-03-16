@@ -30,7 +30,7 @@
               <span class="header-search-form__icon"></span>
               <input class="header-search-form__input" type="search" id="search-form-input" name="search-input-field"
                 placeholder="Поиск по сайту">
-              <button class="header-search-form__btn" type="submit">НАЙТИ</button>
+              <button class="header-search-form__btn" type="submit" aria-label="Кнопка—Найти">НАЙТИ</button>
             </form>
           </li>
 
@@ -50,7 +50,7 @@
       <nav class="header-site-nav">
         <ul class="header-site-nav__list">
 
-          <li class="header-site-nav__item"><a class="link dropdown-toggle" href="#">Каталог товаров</a></li>
+          <li class="header-site-nav__item"><a class="link dropdown-toggle" href="#" aria-label="перейти на страницу — Каталог товаров">Каталог товаров</a></li>
           <li class="header-site-nav__item"><a class="link" href="#">Доставка</a></li>
           <li class="header-site-nav__item"><a class="link" href="#">Гарантия</a></li>
           <li class="header-site-nav__item"><a class="link" href="#contacts">Контакты</a></li>
@@ -357,7 +357,7 @@
             <li class="contacts-about__partners-item">Автотрейдинг</li>
             <li class="contacts-about__partners-item">ЖелДорЭкспедиция</li>
           </ul>
-          <a class="link contacts-link" href="#">Подробнее о нас</a>
+          <a class="link contacts-link" href="#" aria-label="Подробнее о магазине">Подробнее о нас</a>
         </section>
         <!-- /About us -->
 
@@ -372,7 +372,7 @@
           <img class="contacts__map-img" src="assets/contact-block-map.png" width="560" height="222"
             alt="Наш офис на карте по адресу улица Строителей, 15">
           <!-- /Map -->
-          <a class="link contacts-link" href="#">Напишите нам</a>
+          <a class="link contacts-link" href="#" aria-label="Напишите нам">Напишите нам</a>
         </section>
         <!-- /Contacts -->
       </div>
@@ -387,7 +387,7 @@
         <h2 class="visually-hidden">Войти в личный кабинет</h2>
         <ul class="footer-nav__list">
           <li class="footer-nav__item"><a class="footer-logo logo-disabled" href="index.html"
-              aria-label="На главную интернет-магазина Девайс"><img src="assets/device-logo-yellow.svg" width="163"
+              aria-hidden="true" focusable="false" tabindex="-1"><img src="assets/device-logo-yellow.svg" width="163"
                 height="35" alt="Логотип интернет-магазина Девайс"></a>
           </li>
 
@@ -396,10 +396,10 @@
               aria-label="Войти в личный кабинет">Войти</a>
           </li>
           <li class="footer-nav__item">
-            <a class="footer-nav__user-link footer-nav__chart-icon" aria-label="Сравнить">Сравнить</a>
+            <a class="footer-nav__user-link footer-nav__chart-icon" href="#" aria-label="Сравнить выбранные товары">Сравнить</a>
           </li>
           <li class="footer-nav__item">
-            <a class="footer-nav__user-link footer-nav__cart-icon" href="#" aria-label="Корзина">Корзина</a>
+            <a class="footer-nav__user-link footer-nav__cart-icon" href="#" aria-label="Перейти в корзину">Корзина</a>
           </li>
 
           </li>
@@ -413,13 +413,12 @@
           <li class="footer-contacts__item">г. Москва, ул. Строителей, 15</li>
           <li class="footer-contacts__item">
             <ul>
-              <li><a class="footer-contacts__link">Доставка</a></li>
-              <li><a class="footer-contacts__link">Гарантия</a></li>
-              <li><a class="footer-contacts__link">Контакты</a></li>
+              <li><a href="#" class="footer-contacts__link">Доставка</a></li>
+              <li><a href="#" class="footer-contacts__link">Гарантия</a></li>
+              <li><a href="#" class="footer-contacts__link">Контакты</a></li>
             </ul>
           </li>
-          <li class="footer-contacts__item">Тел.: <a class="footer-phone" href="tel:+7495495-95-95">+7 (495)
-              495-95-95</a>
+          <li class="footer-contacts__item">Тел.: <a class="footer-phone" href="tel:+7495495-95-95" aria-label="Телефон для связи +7-495-495-95-95">+7 (495) 495-95-95</a>
           </li>
         </ul>
       </section>
@@ -433,7 +432,7 @@
           <li class="footer-social__item">
             <ul>
               <li>
-                <a class="footer-social__link" href="https://htmlacademy.ru/intensive/htmlcss" title="Фейсбук">
+                <a class="footer-social__link" href="https://htmlacademy.ru/intensive/htmlcss" title="Фейсбук" aria-hidden="true" focusable="false">
                   <svg class="footer-social__icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
                     xmlns:v="https://vecta.io/nano">
                     <path
@@ -444,7 +443,7 @@
               </li>
 
               <li>
-                <a class="footer-social__link" href="https://htmlacademy.ru/intensive/htmlcss" title="Инстаграм"><svg
+                <a class="footer-social__link" href="https://htmlacademy.ru/intensive/htmlcss" title="Инстаграм" aria-hidden="true" focusable="false"><svg
                     class="footer-social__icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
                     xmlns:v="https://vecta.io/nano">
                     <path
@@ -455,7 +454,7 @@
               </li>
 
               <li>
-                <a class="footer-social__link" href="https://htmlacademy.ru/intensive/htmlcss" title="Твиттер"><svg
+                <a class="footer-social__link" href="https://htmlacademy.ru/intensive/htmlcss" title="Твиттер" aria-hidden="true" focusable="false"><svg
                     class="footer-social__icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
                     xmlns:v="https://vecta.io/nano">
                     <path
