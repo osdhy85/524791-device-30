@@ -59,42 +59,43 @@
       <nav class="header-site-nav">
         <ul class="header-site-nav__list">
 
-          <li class="header-site-nav__item"><a class="link dropdown-toggle" href="#"
-              aria-label="перейти на страницу — Каталог товаров">Каталог товаров</a></li>
-          <li class="header-site-nav__item"><a class="link" href="#">Доставка</a></li>
-          <li class="header-site-nav__item"><a class="link" href="#">Гарантия</a></li>
-          <li class="header-site-nav__item"><a class="link" href="#">Контакты</a></li>
           <!-- Sabnav -->
           <li class="header-site-nav__item">
+            <a class="link dropdown-toggle" href="#" aria-label="Открыть расширенное меню">Каталог товаров</a>
             <div class="header-site-subnav">
-              <ul class="header-site-subnav__list header-site-subnav__list--col1">
-                <li class="header-site-subnav__item"><a class="header-site-subnav__link" href="catalog.html">Виртуальная
-                    реальность</a></li>
-                <li class="header-site-subnav__item"><a class="header-site-subnav__link" href="catalog.html">Моноподы
-                    для селфи</a></li>
-                <li class="header-site-subnav__item"><a class="header-site-subnav__link"
-                    href="catalog.html">Экшн-камеры</a></li>
-              </ul>
+              <ul class="header-site-subnav__list">
+                <li class="header-site-subnav__item">
+                  <ul>
+                    <li><a class="header-site-subnav__link" href="catalog.html">Виртуальная реальность</a></li>
+                    <li><a class="header-site-subnav__link" href="catalog.html">Моноподы для селфи</a></li>
+                    <li><a class="header-site-subnav__link" href="catalog.html">Экшн-камеры</a></li>
+                  </ul>
+                </li>
 
-              <ul class="header-site-subnav__list header-site-subnav__list--col2">
-                <li class="header-site-subnav__item"><a class="header-site-subnav__link"
-                    href="catalog.html">Фитнес-браслеты</a></li>
-                <li class="header-site-subnav__item"><a class="header-site-subnav__link" href="catalog.html">Умные
-                    часы</a></li>
-              </ul>
+                <li class="header-site-subnav__item">
+                  <ul>
+                    <li><a class="header-site-subnav__link" href="catalog.html">Фитнес-браслеты</a></li>
+                    <li><a class="header-site-subnav__link" href="catalog.html">Умные часы</a></li>
+                  </ul>
+                </li>
 
-              <ul class="header-site-subnav__list header-site-subnav__list--col3">
-                <li class="header-site-subnav__item"><a class="header-site-subnav__link"
-                    href="catalog.html">Квадрокоптер</a></li>
+                <li class="header-site-subnav__item">
+                  <ul>
+                    <li><a class="header-site-subnav__link" href="catalog.html">Квадрокоптер</a></li>
+                  </ul>
+                </li>
               </ul>
-
             </div>
           </li>
           <!-- /Sabnav -->
+
+          <li class="header-site-nav__item"><a class="link" href="#">Доставка</a></li>
+          <li class="header-site-nav__item"><a class="link" href="#">Гарантия</a></li>
+          <li class="header-site-nav__item"><a class="link" href="#">Контакты</a></li>
+
         </ul>
       </nav>
       <!-- /Navigation — bottom -->
-    </div>
     </div>
   </header>
 
@@ -292,10 +293,11 @@
                 </h3>
               </a>
               <p>1&nbsp;100&nbsp;руб.</p>
+              </div>
           </li>
 
           <li class="cards__item">
-            <a class="cards__item--overlay">
+            <div class="cards__item--overlay">
               <img src="assets/monopods-item-1.png" width="360" height="380" alt="Профессиональная селфи-палка">
               <div>
                 <div class="cards__item--overlay-btn">
@@ -303,7 +305,7 @@
                   <button class="button cards__compare-btn" type="button">Добавить к сравнению</button>
                 </div>
               </div>
-            </a>
+            </div>
             <div class="cards__text">
               <a class="cards__item-link" href="#monopod-2.html"
                 aria-label="Профессиональная селфи-палка — стоимость 1 500 рублей">
@@ -315,7 +317,7 @@
           </li>
 
           <li class="cards__item">
-            <a class="cards__item--overlay">
+            <div class="cards__item--overlay">
               <img src="assets/monopods-item-3.png" width="360" height="380" alt="Непотопляемая селфи-палка">
               <div>
                 <div class="cards__item--overlay-btn">
@@ -323,7 +325,7 @@
                   <button class="button cards__compare-btn" type="button">Добавить к сравнению</button>
                 </div>
               </div>
-            </a>
+            </div>
             <div class="cards__text">
               <a class="cards__item-link" href="#monopod-3.html"
                 aria-label="Непотопляемая селфи-палка — стоимость 1 500 рублей">
@@ -336,7 +338,7 @@
 
           <li class="cards__item">
             <span class="cards__item-sticker--new"></span>
-            <a class="cards__item--overlay">
+            <div class="cards__item--overlay">
               <img src="assets/monopods-item-4.png" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
               <div>
                 <div class="cards__item--overlay-btn">
@@ -344,7 +346,7 @@
                   <button class="button cards__compare-btn" type="button">Добавить к сравнению</button>
                 </div>
               </div>
-            </a>
+            </div>
             <div class="cards__text">
               <a class="cards__item-link" href="#monopod-4.html"
                 aria-label="Селфи-палка «Следуй за мной» — стоимость 1 900 рублей">
