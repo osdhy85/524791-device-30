@@ -28,8 +28,8 @@
   font-weight: 300;
   font-style: normal;
   font-display: swap;
-  src: url("/fonts/opensanslight.woff2") format("woff2"),
-    url("/fonts/opensanslight.woff") format("woff");
+  src: url("../fonts/opensanslight.woff2") format("woff2"),
+    url("../fonts/opensanslight.woff") format("woff");
 }
 
 @font-face {
@@ -37,8 +37,8 @@
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-  src: url("/fonts/opensans.woff2") format("woff2"),
-    url("/fonts/opensans.woff") format("woff");
+  src: url("../fonts/opensans.woff2") format("woff2"),
+    url("../fonts/opensans.woff") format("woff");
 }
 
 @font-face {
@@ -46,8 +46,8 @@
   font-weight: 300;
   font-style: normal;
   font-display: swap;
-  src: url("/fonts/gilroylight.woff2") format("woff2"),
-    url("/fonts/gilroylight.woff") format("woff");
+  src: url("../fonts/gilroylight.woff2") format("woff2"),
+    url("../fonts/gilroylight.woff") format("woff");
 }
 
 @font-face {
@@ -55,8 +55,8 @@
   font-weight: 800;
   font-style: normal;
   font-display: swap;
-  src: url("/fonts/gilroyextrabold.woff2") format("woff2"),
-    url("/fonts/gilroyextrabold.woff") format("woff");
+  src: url("../fonts/gilroyextrabold.woff2") format("woff2"),
+    url("../fonts/gilroyextrabold.woff") format("woff");
 }
 
 /* Global */
@@ -1863,12 +1863,33 @@ input[type="radio"]:disabled+label::after {
   max-width: 473px;
 }
 
+.contacts-about:nth-child(1) p {
+  padding: 0 0 40px 0;
+}
+
 .contacts {
   max-width: 560px;
 }
 
-.contacts__map-img {
-  padding: 0 0 68px 0;
+.contacts p {
+  padding: 0 0 12px 0;
+}
+
+.contacts__map {
+  padding: 0 0 76px 0;
+}
+
+.contacts__map-link {
+  outline: none;
+}
+
+.contacts__map-link img {
+  display: block;
+}
+
+.contacts__map-link:focus img {
+  outline: 3px solid var(--extra-focus);
+  outline-offset: 3px;
 }
 
 .contacts h2,
@@ -1886,7 +1907,6 @@ input[type="radio"]:disabled+label::after {
 .contacts p,
 .contacts-about p {
   margin: 0;
-  padding: 0 0 40px 0;
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: 300;
   font-size: 15px;
