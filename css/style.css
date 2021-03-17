@@ -1549,15 +1549,17 @@ input[type="radio"]:disabled+label::after {
   margin: 0 0 34px 0;
 }
 
-.cards__item-sticker--new {
+.cards__item.cards__item—new::before {
   content: "";
   display: block;
   position: absolute;
-  top: 29px;
+  top: 30px;
   right: 27px;
   width: 62px;
   height: 62px;
   background-image: url("../img/item-label-new.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
 }
 
 .cards__text {
@@ -2371,15 +2373,12 @@ button.modal-form__submit-btn:active {
   position: fixed;
   top: 300px;
   right: 0;
-  bottom: 300px;
+  bottom: 467px;
   left: 0;
   margin: auto;
   width: 960px;
-  height: 558px;
-  /* background-image: url("../assets/popup-map.png");
-  background-position: 0 0;
-  background-repeat: no-repeat; */
-  box-shadow: 0 10px 16px rgba(var(--basic-black-rgba), 0.7);
+  height: 559px;
+  box-shadow: 0 10px 16px rgba(var(--basic-black-rgba), 0.2);
   z-index: 4;
 }
 
@@ -2395,8 +2394,8 @@ button.modal-form__submit-btn:active {
 
 .modal-map button.modal-map__close-btn {
   position: absolute;
-  top: 29px;
-  right: 36px;
+  top: 23px;
+  right: 18px;
 }
 
 button.modal-form__close-btn,
