@@ -888,11 +888,19 @@ table.slide-pruduct-features td {
   outline-offset: 3px;
 }
 
-.popular__link:hover path:first-child {
-  fill: var(--extra-saffron);
+.popular__link svg {
+  width: 160px;
+  height: 160px;
+  background-color: var(--extra-light-yellow);
 }
 
-.popular__link:active path:last-child {
+.popular__link:hover svg {
+  width: 160px;
+  height: 160px;
+  background-color: var(--extra-saffron);
+}
+
+.popular__link:active path {
   fill-opacity: 0.3;
 }
 
@@ -1874,18 +1882,46 @@ input[type="radio"]:disabled+label::after {
 
 .contacts-about {
   max-width: 473px;
+  position: relative;
 }
 
 .contacts-about:nth-child(1) p {
   padding: 0 0 40px 0;
 }
 
+.contacts-about__decor-img::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 13px;
+  left: 0;
+  width: 80px;
+  height: 7px;
+  background-image: url(../img/rectangle-black.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
 .contacts {
   max-width: 560px;
+  position: relative;
 }
 
 .contacts p {
   padding: 0 0 12px 0;
+}
+
+.contacts__decor-img::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 13px;
+  left: 0;
+  width: 80px;
+  height: 7px;
+  background-image: url(../img/rectangle-black.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
 }
 
 .contacts__map {
@@ -1912,7 +1948,7 @@ input[type="radio"]:disabled+label::after {
 .contacts h2,
 .contacts-about h2 {
   margin: 0;
-  padding: 42px 0 39px 0;
+  padding: 70px 0 39px 0;
   font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 47px;
@@ -2193,6 +2229,10 @@ a.footer-logo:focus {
   justify-self: end;
 }
 
+.footer-social__item {
+  position: relative;
+}
+
 .footer-social__item img,
 .footer-social__item svg {
   display: block;
@@ -2205,6 +2245,19 @@ a.footer-logo:focus {
   flex-wrap: wrap;
   justify-content: space-between;
   list-style: none;
+}
+
+.footer-social__decor-img::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 80px;
+  height: 7px;
+  background-image: url(../img/rectangle-yellow.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
 }
 
 .footer-social__link:hover path {
